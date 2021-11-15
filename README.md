@@ -8,7 +8,7 @@ The repository contains following contents as below:
 * Product requirement
 * Code samples
 
-Schedule, this project will be proceed by three phases in order:
-* Basic about HTML, CSS, JavaScript
-* Basic about C# and web development
-* How to work with database and integrate it with other parts
+According to the schedule, this project will be conducted in three phases in order:
+* Basics of HTML, CSS, JavaScript
+* Basics of C# and web development
+* How to work with the database and integrate it with other parts
