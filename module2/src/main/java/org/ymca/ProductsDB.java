@@ -15,11 +15,11 @@ public class ProductsDB {
         addProduct(2, "Pepsi", 8.5, 2000);
         addProduct(3, "Strongbow", 20, 1234);
         addProduct(5, "Cocacola", 10, 1000);
-        addProduct(6, "Cocacola", 10, 1000);
+        addProduct(6, "Number one", 10, 1000);
         addProduct(7, "Seven Up", 9, 1711);
-        addProduct(8, "Cocacola", 10, 1000);
+        addProduct(8, "Cocacola Original", 10, 1000);
         addProduct(10, "Sa xi Chuong Duong", 22, 1992);
-        addProduct(12, "Cocacola", 10, 1000);
+        addProduct(12, "Redbull", 10, 1000);
         addProduct(13, "Merinda", 12, 99);
     }
 
@@ -30,6 +30,10 @@ public class ProductsDB {
     private void addProduct(int id, String name, double price, int remainingAmount) {
         Product product = new Product(id, name, price, remainingAmount);
         productMap.put(id, product);
+    }
+
+    public void updateProduct(Product product) {
+        productMap.put(product.getId(), product);
     }
 
     public Product getProduct(int id) {

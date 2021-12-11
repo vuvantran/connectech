@@ -4,12 +4,15 @@
 <head>
    <style>
       table, td, th {
-      border: 1px solid black;
+         border: 1px solid black;
       }
 
       table {
-      width: 100%;
-      border-collapse: collapse;
+         border-collapse: collapse;
+      }
+
+      th, td {
+         padding: 10px;
       }
    </style>
 </head>

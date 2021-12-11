@@ -4,11 +4,15 @@
 <head>
    <style>
       table, td, th {
-      border: 1px solid black;
+        border: 1px solid black;
       }
 
       table {
-      border-collapse: collapse;
+        border-collapse: collapse;
+      }
+
+      th, td {
+         padding: 10px;
       }
    </style>
 </head>
@@ -32,6 +36,7 @@
             <td>${product.remainingAmount}</td>
         </tr>
     </table>
-    <a href="/products">Back to product list</a>
+    <a href='/products'>Back to product list</a>
+    <a href='/product_update?id=${product.id}'>Edit product</a>
 </body>
 </html>
