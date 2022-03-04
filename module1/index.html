@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <style src="main.css"></style>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!--header: logo, login/register, search box and button search-->
+    <header>
+        <div class="logo-menu">
+            <div>
+                <a href="/" data-view-id="header_main_logo" class="logo">
+                    <img src="https://ymcavn.org/wp-content/uploads/2021/06/YMCA-Website-Header-1.jpg"
+                        alt="connecTech-logo"></a>
+            </div>
+        </div>
+        <div>
+            <button type="button">Login</button>
+            <button type="button">Register</button>
+        </div>
+        <div>
+            <div>
+                <div class="cart-wrapper">
+                    <img class="cart-icon" src="https://cdn-icons-png.flaticon.com/512/263/263142.png"><span
+                        class="cart-logo">0</span>
+                </div>
+                <span class="cart-text">Cart</span>
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="Input product name here">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+    <!--horizontal menu bar include: -->
+    <div>
+        <div>
+            <a href="html/product_list.html?product_type=phone">
+                <div>Phones</div>
+            </a>
+            <a href="html/product_list.html?product_type=drink">
+                <div>Drinks</div>
+            </a>
+            <a href="html/product_list.html?product_type=drink">
+                <div>Clothes</div>
+            </a>
+        </div>
+    </div>
+    <!--menu: Hot deals, new products, top sale-->
+    <div>
+        <!--Hot sales-->
+        <div>
+            <div>Hot sales today</div>
+            <div class="hoz-slider">
+                <div>
+                    <a href="html/product_detail.html?id=1">
+                        <div style="position: relative;">
+                            <div class="img-thumbnail">
+                                <img alt="Coca cola original" src="images/coca_cola.jpeg" class="product-image-logo">
+                            </div>
+                        </div>
+                        <div><span class="deal_price">99.000 ₫</span><span class="deal_discount">-23%</span></div>
+                    </a>
+                </div>
+                <div>
+                    <a href="html/product_detail.html?id=1">
+                        <div style="position: relative;">
+                            <div class="img-thumbnail">
+                                <img alt="Coca cola original" src="images/coca_cola.jpeg" class="product-image-logo">
+                            </div>
+                        </div>
+                        <div><span class="deal_price">99.000 ₫</span><span class="deal_discount">-23%</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--New products-->
+        <div></div>
+        <!--Top sales-->
+        <div></div>
+    </div>
+</body>
