@@ -142,6 +142,10 @@ button {
   font-weight: 200;
 }
 
+.c-sidebar > .ce-item > a {
+  text-decoration: none;
+}
+
 .ce-content {
   width: calc(100% - 240px);
   padding: 24px;
@@ -221,3 +225,4 @@ button {
 .c-product > a > .ce-info > .ce-price {
   margin-top: 8px;
 }
+
