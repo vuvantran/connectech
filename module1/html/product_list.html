@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+    <title>connecTech e-commerce website</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../main.css"/>
 </head>
@@ -9,7 +10,7 @@
     <!--header: logo, login/register, search box and button search-->
     <header class="c-header">
         <div class="ce-logo">
-            <a href="/" data-view-id="header_main_logo" class="ce-logo-link">
+            <a href="../index.html" data-view-id="header_main_logo" class="ce-logo-link">
                 <img
                     class='ce-logo-image'
                     src="https://ymcavn.org/wp-content/uploads/2021/06/YMCA-Website-Header-1.jpg"
@@ -20,22 +21,22 @@
 
         <!--horizontal menu bar include: -->
         <div class="ce-menu">
-            <a href="html/product_list.html">
-                <div class="ce-menu-item">Shop</div>
+            <a href="../html/product_list.html?product_type=drink">
+                <div class="ce-menu-item">Drinks</div>
             </a>
         </div>
 
         <div class="ce-controls">
             <div class="ce-search">
-                <input type="text" placeholder="What are you looking for?">
+                <input id="inputSearch" type="text" placeholder="What are you looking for?">
             </div>
             <div class="ce-cart">
                 <img class="ce-cart-icon" src="https://cdn-icons-png.flaticon.com/128/743/743131.png">
                 <span class="ce-cart-count">0</span>
                 <!-- <span class="ce-cart-text">Cart</span> -->
             </div>
-            <button class="ce-register-btn" type="button">Register</button>
-            <button class="ce-login-btn" type="button">Login</button>
+            <button class="ce-register-btn" type="button" onClick="location.href='html/register.html'">Register</button>
+            <button class="ce-login-btn" type="button" onClick="location.href='html/login.html'">Login</button>
         </div>
     </header>
     <!--menu: Hot deals, new products, top sale-->
@@ -223,7 +224,7 @@
                     </div>
                 </div>
             </div>
-            <!--New products-->
         </div>
     </div>
+    <script type="text/javascript" src="../main.js"></script>
 </body>
