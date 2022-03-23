@@ -226,3 +226,10 @@ button {
   margin-top: 8px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
