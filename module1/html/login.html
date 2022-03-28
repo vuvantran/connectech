@@ -1,8 +1,48 @@
-<Html> 
+<head>
+  <title>connecTech e-commerce website</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../main.css">
+</head>
+
+<body class="p-register">
+  <header class="c-header">
+    <div class="ce-logo">
+      <a href="../index.html" data-view-id="header_main_logo" class="ce-logo-link">
+        <img class='ce-logo-image' src="https://ymcavn.org/wp-content/uploads/2021/06/YMCA-Website-Header-1.jpg"
+          alt="connecTech-logo">
+      </a>
+    </div>
+
+    <div class="ce-controls">
+      <label for="login-btn" class="ce-message">Dont have an account?</label>
+      <button id="login-btn" class="ce-login-btn" type="button" onClick="location.href='./register.html'">Register</button>
+    </div>
+
+  </header>
+  <!--menu: Hot deals, new products, top sale-->
+  <div class="ce-body">
+    <h2 class="ce-page-title">Welcome To YMCA!</h2>
+
+    <form action="" class="c-register-login-form">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" value=""><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" value=""><br><br>
+      <input type="submit" id="submit" value="Log In">
+    </form>
+
+    <!-- Script -->
+  </div>
+  <script src="js/register.js"></script>
+</body>
+
+
+<Html>
     <header>
-   
+
     </header>
     <body>
+
 
         <h2>Login</h2>
 
@@ -12,7 +52,7 @@
             <label for="password">Password:</label><br>
             <input type="password" id="password" name="password" value=""><br><br>
             <input type="button" id="submit" value="Login">
-        </form> 
+        </form>
 
         <p>If you do not have an account click here to <a href="register.html">register</a></p>
 

@@ -1,39 +1,54 @@
-<Html> 
-    <header>
-    </header>
-    <body>
+<head>
+  <title>connecTech e-commerce website</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../main.css">
+</head>
 
-        <h2>Register an acount with us</h2>
+<body class="p-register">
+  <header class="c-header">
+    <div class="ce-logo">
+      <a href="../index.html" data-view-id="header_main_logo" class="ce-logo-link">
+        <img class='ce-logo-image' src="https://ymcavn.org/wp-content/uploads/2021/06/YMCA-Website-Header-1.jpg"
+          alt="connecTech-logo">
+      </a>
+    </div>
 
-        <form action="">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" value=""><br>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" value=""><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" value=""><br>
-            <label for="dob">Date of Birth:</label><br>
-            <input type="date" id="dob" name="dob" value=""><br>
-            <label for="gender">Gender:</label><br>
-            <input type="radio" id="male" name="gender" value="Male"><label for="gender">Male</label>
-            <input type="radio" id="female" name="gender" value="Female"><label for="gender">Female</label><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" value=""><br>
-            <label for="cfmpassword">Confirm Password:</label><br>
-            <input type="password" id="cfmpassword" name="cfmpassword" value=""><br>
-            <label for="agreement">Terms and condition</label><br>
-            <input type="checkbox" id="website" name="agreement" value="website">
-            <span> I agree to the website terms and condition</span><br>
-            <input type="checkbox" id="marketing" name="agreement" value="marketing">
-            <span> I wish to receive promotion </span><br><br> 
+    <div class="ce-controls">
+      <label for="login-btn" class="ce-message">Already have an account?</label>
+      <button id="login-btn" class="ce-login-btn" type="button" onClick="location.href='./login.html'">Login</button>
+    </div>
 
-            <input type="button" id="submit" value="Register">
-        </form> 
+  </header>
+  <!--menu: Hot deals, new products, top sale-->
+  <div class="ce-body">
+    <h2 class="ce-page-title">Register now!</h2>
 
-        <p>If you have an account click here to <a href="login.html">login</a></p>
+    <form action="" class="c-register-login-form">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" value=""><br>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" value=""><br>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email" value=""><br>
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" value=""><br>
+      <!-- <label for="gender">Gender:</label><br> -->
+      <input type="radio" id="male" name="gender" value="Male"><label for="gender">Male</label>
+      <input type="radio" id="female" name="gender" value="Female"><label for="gender">Female</label><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" value=""><br>
+      <label for="cfmpassword">Confirm Password:</label><br>
+      <input type="password" id="cfmpassword" name="cfmpassword" value=""><br>
+      <label for="agreement">Terms and condition:</label><br>
+      <input type="checkbox" id="website" name="agreement" value="website">
+      <label for="website"> I agree to the website terms and condition</label><br>
+      <input type="checkbox" id="marketing" name="agreement" value="marketing">
+      <label for="marketing"> I wish to receive promotion </label><br><br>
 
-        <!-- Script -->
-        <script src="js/register.js"></script>
-    </body>
-</Html>
+      <input type="submit" id="submit" value="Register">
+    </form>
 
+    <!-- Script -->
+  </div>
+  <script src="js/register.js"></script>
+</body>
