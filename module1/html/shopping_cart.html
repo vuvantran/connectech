@@ -4,22 +4,25 @@
     </header>
     <body onload="loadCart()">
         <H2> Shopping Cart</H2>
-        <table>
-            <tr>
-                <th>S/n</th>
-                <th>Product name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-            </tr>
-            <tbody id="cart-content">
-                <tr >
-                    <td>1</td>
-                    <td>Apple</td>
-                    <td>1</td>
-                    <td>$0.50</td> 
+        <form action="../html/payment.html" method="post">
+            <table>
+                <tr>
+                    <th>S/n</th>
+                    <th>Product name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
                 </tr>
-            </tbody>
-        </table>
+                <tbody id="cart-content">
+                    <tr >
+                        <td>1</td>
+                        <td>Apple</td>
+                        <td>1</td>
+                        <td>$0.50</td> 
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" value="Checkout"></input>
+        </form>
         <script src="js/shoppingcart.js"></script>
     </body>
    
