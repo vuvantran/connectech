@@ -41,7 +41,6 @@ button {
   padding: 8px 24px;
   text-transform: uppercase;
   height: 70px;
-  /* border-bottom: 1px solid #0004; */
 }
 
 .c-header > .ce-logo {
@@ -124,16 +123,18 @@ button {
   align-items: center;
   justify-content: center;
 }
-
 .c-header > .ce-controls > .ce-register-btn {
-  margin-right: 8px;
   border: none;
+  background-color: #eee;
+  color: #000;
+  margin-left: 8px;
 }
 
 .c-header > .ce-controls > .ce-login-btn {
   border: none;
   background-color: #2569d9;
   color: #fff;
+  margin-left: 8px;
 }
 
 .c-sidebar {
@@ -276,52 +277,52 @@ button {
   font-size: 0.9em;
 }
 
-.c-product-details {
+.c-product-detail {
   background-color: #fff;
   height: 100%;
   overflow-y: auto;
   display: flex;
 }
-.c-product-details > .ce-thumbnail {
+.c-product-detail > .ce-thumbnail {
   width: 30%;
   padding: 40px;
   text-align: center;
 }
-.c-product-details > .ce-info {
+.c-product-detail > .ce-info {
   width: 70%;
   padding: 40px;
 }
-.c-product-details > .ce-info > .ce-info-item {
+.c-product-detail > .ce-info > .ce-info-item {
   margin-bottom: 16px;
 }
-.c-product-details > .ce-info > .ce-name {
-  font-size: 2em;
+.c-product-detail > .ce-info > .ce-name {
+  font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
   margin: 16px 0 16px;
   font-family: "Vidaloka";
 }
-.c-product-details > .ce-info > .ce-price {
+.c-product-detail > .ce-info > .ce-price {
   font-size: 1.5em;
   color: #ff7a80;
 }
-.c-product-details > .ce-info > .ce-price > .ce-discount > .ce-old-price {
+.c-product-detail > .ce-info > .ce-price > .ce-discount > .ce-old-price {
   font-size: 1rem;
   color: #d1e1f0;
   margin-top: 8px;
   text-decoration: line-through;
 }
-.c-product-details > .ce-info > .ce-price > .ce-discount > .ce-discount-rate {
+.c-product-detail > .ce-info > .ce-price > .ce-discount > .ce-discount-rate {
   font-size: 1rem;
   text-decoration: none;
 }
-.c-product-details > .ce-info > .ce-quantity {
+.c-product-detail > .ce-info > .ce-quantity {
   margin-top: 40px;
 }
-.c-product-details > .ce-info > .ce-quantity > label{
+.c-product-detail > .ce-info > .ce-quantity > label{
   font-weight: 200;
 }
-.c-product-details > .ce-info > .ce-quantity > input{
+.c-product-detail > .ce-info > .ce-quantity > input{
   margin-top: 8px;
   width: 80px;
   height: 32px;
@@ -329,7 +330,7 @@ button {
   border: 1px solid #0003;
   border-radius: 4px;
 }
-.c-product-details > .ce-info > .ce-controls > .ce-add-to-cart-btn {
+.c-product-detail > .ce-info > .ce-controls > .ce-add-to-cart-btn {
   border: none;
   background-color: #2569d9;
   color: #fff;
@@ -484,15 +485,6 @@ button {
   overflow: auto;
   text-align: center;
   padding-bottom: 40px;
-  /* background-color: #efefef; */
-}
-.p-register > .ce-body .ce-content,
-.p-login > .ce-body .ce-content {
-  width: calc(100% - 240px);
-  padding: 24px;
-  height: 100%;
-  overflow: auto;
-  box-sizing: border-box;
 }
 .p-register > .ce-body  > .ce-page-title,
 .p-login > .ce-body  > .ce-page-title {
@@ -504,15 +496,14 @@ button {
 }
 
 /* Page Style - Product Details */
-.p-product-details > .ce-body {
+.p-product-detail > .ce-body {
   box-sizing: border-box;
   height: calc(100% - 70px);
   overflow: hidden;
   background-color: #efefef;
   display: flex;
 }
-
-.p-product-details > .ce-body > .ce-content {
+.p-product-detail > .ce-body > .ce-content {
   width: calc(100% - 240px);
   padding: 24px;
   height: 100%;
@@ -520,7 +511,30 @@ button {
   box-sizing: border-box;
 }
 
-/* Page Style - Product Details */
+/* Page Style - Product List */
+.p-product-list > .ce-body {
+  box-sizing: border-box;
+  height: calc(100% - 70px);
+  overflow: hidden;
+  background-color: #efefef;
+  display: flex;
+}
+.p-product-list > .ce-body > .ce-content {
+  width: calc(100% - 240px);
+  padding: 24px;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+.p-product-list > .ce-body > .ce-content > .ce-title {
+  font-size: 1rem;
+}
+.p-product-list > .ce-body > .ce-content > .ce-products-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Page Style - Shopping Cart */
 .p-shopping-cart > .ce-body {
   box-sizing: border-box;
   height: calc(100% - 70px);

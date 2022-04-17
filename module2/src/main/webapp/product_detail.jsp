@@ -17,7 +17,7 @@
    </style>
 </head>
 <body>
-    <h1>Product detail</h2>
+    <h1>Product detail</h1>
     <table>
         <tr>
             <td>Product ID</td>
