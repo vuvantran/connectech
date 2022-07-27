@@ -1,0 +1,49 @@
+<head>
+  <title>connecTech e-commerce website</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../main.css">
+</head>
+
+<body class="p-register">
+  <header class="c-header">
+    <div class="ce-logo">
+      <a href="../index.html" data-view-id="header_main_logo" class="ce-logo-link">
+        <img class='ce-logo-image' src="https://ymcavn.org/wp-content/uploads/2021/06/YMCA-Website-Header-1.jpg"
+          alt="connecTech-logo">
+      </a>
+    </div>
+
+    <div class="ce-controls">
+      <label for="login-btn" class="ce-message">Already have an account?</label>
+      <button id="login-btn" class="ce-login-btn" type="button" onClick="location.href='./login.html'">Login</button>
+    </div>
+
+  </header>
+  <div class="ce-body">
+    <h1 class="ce-page-title">Register now!</h1>
+
+    <form action="" class="c-register-login-form">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" value=""><br>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" value=""><br>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email" value=""><br>
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" value=""><br>
+      <input type="radio" id="male" name="gender" value="Male"><label for="gender">Male</label>
+      <input type="radio" id="female" name="gender" value="Female"><label for="gender">Female</label><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" value=""><br>
+      <label for="cfmpassword">Confirm Password:</label><br>
+      <input type="password" id="cfmpassword" name="cfmpassword" value=""><br>
+      <label for="agreement">Terms and condition:</label><br>
+      <input type="checkbox" id="website" name="agreement" value="website">
+      <label for="website"> I agree to the website terms and condition</label><br>
+      <input type="checkbox" id="marketing" name="agreement" value="marketing">
+      <label for="marketing"> I wish to receive promotion </label><br><br>
+      <input type="submit" id="submit" value="Register">
+    </form>
+  </div>
+  <script src="js/register.js"></script>
+</body>

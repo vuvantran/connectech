@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+  <title>connecTech e-commerce website</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../main.css" />
+</head>
+
+<body class="p-shopping-cart">
+  <header class="c-header">
+    <div class="ce-logo">
+        <a href="index.html" data-view-id="header_main_logo" class="ce-logo-link">
+            <img
+                class='ce-logo-image'
+                src="https://ymcavn.org/wp-content/uploads/2021/06/YMCA-Website-Header-1.jpg"
+                alt="connecTech-logo"
+            >
+        </a>
+    </div>
+
+    <div class="ce-menu">
+        <a href="html/product_list.html?product_type=drink">
+            <div class="ce-menu-item">Drinks</div>
+        </a>
+    </div>
+
+    <div class="ce-controls">
+      <div class="ce-cart">
+        <a href="html/shopping_cart.html">
+            <img class="ce-cart-icon" src="https://cdn-icons-png.flaticon.com/128/743/743131.png">
+            <span class="ce-cart-count">0</span>
+        </a>
+      </div>
+      <button class="ce-register-btn" type="button" onClick="location.href='html/register.html'">Register</button>
+      <button class="ce-login-btn" type="button" onClick="location.href='html/login.html'">Login</button>
+    </div>
+
+</header>
+  <!--menu: Hot deals, new products, top sale-->
+  <div class="ce-body">
+    <div class="c-sidebar">
+      <div class="ce-item">
+        <a href="product_list.html?category=shop">Shop</a>
+      </div>
+    </div>
+    <div class="ce-content">
+      <!--Hot sales-->
+      <div class="c-cart">
+        <h1 class="ce-title">Shopping Cart</h1>
+        <table class="ce-cart-table">
+          <thead class="ce-table-head">
+            <tr>
+              <th></th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Sub Total</th>
+            </tr>
+          </thead>
+          <tbody id="cart-content" class="ce-table-body">
+            <tr>
+              <td><button class="ce-delete-btn">x</button></td>
+              <td class="ce-product-cell">
+                <img class="ce-product-thumbnail" alt="coke" src="../images/apple.jpeg">
+                Breeze Apple (New Zealand)
+              </td>
+              <td>₫29.000</td>
+              <td>
+                <input type="number" name="quantity" placeholder="quantity" value="2">
+              </td>
+              <td>₫58.000</td>
+            </tr>
+            <tr>
+              <td><button class="ce-delete-btn">x</button></td>
+              <td class="ce-product-cell">
+                <img class="ce-product-thumbnail" alt="coke" src="../images/coca_cola.jpeg">
+                Coke - Original Taste
+              </td>
+              <td>₫99.000</td>
+              <td>
+                <input type="number" name="quantity" placeholder="quantity" value="1">
+              </td>
+              <td>₫99.000</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <div class="ce-cart-total">
+                  Total: ₫215.000
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="ce-checkout-panel">
+          <button class="ce-checkout-btn" onClick="location.href='./payment.html'">
+            Proceed to checkout
+          </button>
+        </div>
+        <script src="js/shoppingcart.js"></script>
+      </div>
+    </div>
+  </div>
+</body>

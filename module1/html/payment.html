@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+  <title>connecTech e-commerce website</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../main.css" />
+</head>
+
+<body class="p-shopping-cart">
+  <header class="c-header">
+      <div class="ce-logo">
+          <a href="index.html" data-view-id="header_main_logo" class="ce-logo-link">
+              <img
+                  class='ce-logo-image'
+                  src="https://ymcavn.org/wp-content/uploads/2021/06/YMCA-Website-Header-1.jpg"
+                  alt="connecTech-logo"
+              >
+          </a>
+      </div>
+
+      <!--horizontal menu bar include: -->
+      <div class="ce-menu">
+          <a href="html/product_list.html?product_type=drink">
+              <div class="ce-menu-item">Drinks</div>
+          </a>
+      </div>
+
+      <div class="ce-controls">
+          <div class="ce-cart">
+              <a href="html/shopping_cart.html">
+                  <img class="ce-cart-icon" src="https://cdn-icons-png.flaticon.com/128/743/743131.png">
+                  <span class="ce-cart-count">0</span>
+              </a>
+              <!-- <span class="ce-cart-text">Cart</span> -->
+          </div>
+          <button class="ce-register-btn" type="button" onClick="location.href='html/register.html'">Register</button>
+          <button class="ce-login-btn" type="button" onClick="location.href='html/login.html'">Login</button>
+      </div>
+
+  </header>
+  <div class="ce-body">
+    <div class="c-sidebar">
+      <div class="ce-item">
+        <a href="product_list.html?category=shop">Shop</a>
+      </div>
+    </div>
+    <div class="ce-content">
+      <div class="c-payment">
+        <h1 class="ce-title">Payment</h1>
+        <form class="ce-payment-form">
+          <label for="Name">Name:</label><br>
+          <input type="text" id="name" name="name" value=""><br>
+          <label for="cardnumber">Card Number:</label><br>
+          <input type="text" id="cardNum" name="cardNum" value=""><br><br>
+          <label for="cvv">CVV:</label><br>
+          <input type="text" id="cvv" name="cvv" value=""><br><br>
+          <label for="expiry">Expiry:</label><br>
+          <input type="text" id="expiry" name="expirt" placeholder="MM/YY"><br><br>
+          <label for="error" id="lblError" style="color:red"></label><br>
+          <input type="submit" id="submit" value="Register Payment">
+        </form>
+      </div>
+      <script src="js/payment.js"></script>
+    </div>
+  </div>
+</body>
